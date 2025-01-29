@@ -7,20 +7,25 @@ const LoginScreen = ({ navigation }) => {
     <View style={styles.container}>
       <Text style={styles.title}>Login Here</Text>
       <Text style={styles.subtitle}>Welcome back, you’ve been missed!</Text>
+  
       <TextInput placeholder="Email" style={styles.input} />
       <TextInput placeholder="Password" style={styles.input} secureTextEntry />
+  
       <TouchableOpacity style={styles.linkContainer}>
         <Text style={styles.link}>Forgot your password?</Text>
+  
       </TouchableOpacity>
       <TouchableOpacity style={styles.button}>
         <Text style={styles.buttonText}>Sign In</Text>
+  
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate('Signup')}>
         <Text style={styles.textLink}>Create a new account</Text>
+  
       </TouchableOpacity>
       <View style={styles.socialContainer}>
         <Text>Or continue with</Text>
-        {/* Add social buttons here */}
+
       </View>
     </View>
   );
