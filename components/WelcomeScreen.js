@@ -10,17 +10,21 @@ const WelcomeScreen = ({ navigation }) => {
         style={styles.image}
         resizeMode="contain"
       />
+          
       <Text style={styles.title}>Discover Your Dream Job Here</Text>
       <Text style={styles.subtitle}>
         Explore all the existing job roles based on your interest and study major
       </Text>
+          
       <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Login')}>
           <Text style={styles.buttonText}>Login</Text>
+          
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Signup')}>
           <Text style={styles.buttonText}>Register</Text>
         </TouchableOpacity>
+          
       </View>
     </View>
   );
