@@ -9,18 +9,21 @@ const SignupScreen = ({ navigation }) => {
       <Text style={styles.subtitle}>
         Create an account to explore all the existing jobs
       </Text>
+  
       <TextInput placeholder="Email" style={styles.input} />
       <TextInput placeholder="Password" style={styles.input} secureTextEntry />
       <TextInput placeholder="Confirm Password" style={styles.input} secureTextEntry />
       <TouchableOpacity style={styles.button}>
         <Text style={styles.buttonText}>Sign Up</Text>
+  
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate('Login')}>
         <Text style={styles.textLink}>Already have an account?</Text>
+  
       </TouchableOpacity>
       <View style={styles.socialContainer}>
         <Text>Or continue with</Text>
-        {/* Add social buttons here */}
+  
       </View>
     </View>
   );
