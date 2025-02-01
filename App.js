@@ -12,6 +12,7 @@ import SignupScreen from './components/SignupScreen';
 const Stack = createStackNavigator();
 
 export default function App() {
+  
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Welcome" screenOptions={{ headerShown: false }}>
@@ -21,4 +22,5 @@ export default function App() {
       </Stack.Navigator>
     </NavigationContainer>
   );
+
 }
